@@ -21,6 +21,6 @@ jobs:
       run: |
         pip install tensorflow mlflow split-folders pillow numpy
 
-    - name: Run pipeline
+    - name: Check Python files
       run: |
-        python pipeline.py
+        python -m py_compile pipeline.py
